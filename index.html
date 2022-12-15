@@ -176,23 +176,54 @@
       }
       .content-middle {
         position: absolute;
-        top: 2980px;
+        top: 2900px;
         background:transparent;
         color: #f1f1f1;
         width: 100%;
         padding: 10px;
       }
       .content-middle button {
-        width: 250px;
+        width: 200px;
         font-size: 18px;
         padding: 10px;
         border: 3px solid white;
         background: #000;
         color: #fff;
         cursor: pointer;
-        border-radius: 5%;
         background-color: transparent;
         margin-left: 20px;
+        font-weight: 600;
+      }
+      .content-middle h1 {
+        font-size: 50px;
+        font-weight: 700;
+      }
+      .content-middle p {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .price {
+        margin-top: 30px;
+      }
+      #learnBtn {
+        color: #000;
+        background-color: white;
+      }
+      .benifit_container {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 100px;
+        /* padding-right: 50px; */
+        height: 470px;
+      }
+      .col_benifit img {
+        margin-left: 30px;
+        width: 50%;
+      }
+      .col_benifit {
+        margin: 0;
+        display: flex;
+        width: 25%;
       }
     </style>
   </head>
@@ -407,9 +438,49 @@
       <div class="content-middle">
         <h1>BEATS FIT PRO</h1>
         <p>Hear what tech reviewers are saying</p>
-        <button id="shopBtn" onclick="myFunction()">LEARN MORE</button>
-        <button id="filmBtn" onclick="myFunction()">WATCH THE VIDEO</button>
+        <p class="price">$199.99</p>
+        <button id="learnBtn" onclick="myFunction()">LEARN MORE</button>
+        <button id="watchBtn" onclick="myFunction()">WATCH THE VIDEO</button>
       </div>
+      <div class="benifit">
+        <div class="row row-cols-1 row-cols-md-1 g-1">
+          <div class="col_benifit">
+            <div class="benifit_container">
+              <div class="benifit-body">
+                <h5 class="benifit-title">Beats Studio Buds</h5>
+                <p class="benifit-text">$149.99</p>
+              </div>
+              <img src="/img/benefit1.png" class="benifit-img-top" alt="Skyscrapers" />
+            </div>
+          </div>
+          <div class="col_benifit">
+            <div class="benifit_container">
+              <div class="benifit-body">
+                <h5 class="benifit-title">Beats Solo3 Wireless</h5>
+                <p class="benifit-text">$199.95</p>
+              </div>
+              <img src="/img/benefit2.png" class="benifit-img-top" alt="Skyscrapers" />
+            </div>
+          </div>
+          <div class="col_benifit">
+            <div class="benifit_container">
+              <div class="benifit-body">
+                <h5 class="benifit-title">Beats Flex</h5>
+                <p class="benifit-text">$69.99</p>
+              </div>
+              <img src="/img/benefit3.png" class="benifit-img-top" alt="Skyscrapers" />
+            </div>
+            <div class="col_benifit">
+                <div class="benifit_container">
+                  <div class="benifit-body">
+                    <h5 class="benifit-title">Beats Flex</h5>
+                    <p class="benifit-text">$69.99</p>
+                  </div>
+                  <img src="/img/benefit4.png" class="benifit-img-top" alt="Skyscrapers" />
+                </div>
+              </div>
+          </div>
+        </div>
     <script>
       var video = document.getElementById("myVideo");
       var btn = document.getElementById("myBtn");
